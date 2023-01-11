@@ -1,0 +1,2 @@
+#!/bin/sh
+nmcli device wifi list | grep "^*" | awk '{ print $3 " " $9}'

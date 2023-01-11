@@ -1,0 +1,4 @@
+#!/bin/sh
+echo $1
+convert $1 -gravity North -crop 16:9 /tmp/out.png
+swww img /tmp/out.png

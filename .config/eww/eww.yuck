@@ -1,0 +1,84 @@
+(defwidget bar []
+  (centerbox :orientation "h"
+    (workspaces)
+    (music)
+    (sidestuff)))
+
+(defpoll window :interval "0.5s" :initial "Unknown"
+  `bash ~/.config/eww/scripts/currentwindow`)
+  
+(defpoll no :interval "0.1s" :initial "Unknown"
+  `bash ~/.config/eww/scripts/workspaceno`)
+
+(defpoll connection :interval "1s" :initial "Not connected"
+  'bash ~/.config/eww/scripts/getconn')
+
+(defwidget sidestuff []
+  (box :class "sidestuff" :orientation "h" :space-evenly false :halign "end"
+    "${connection}  ${weather}  "
+    (metric :label "🔊"
+            :value volume
+            :onchange "amixer sset Master {}%"
+	    :tooltip volume)
+    (metric :label "🔋"
+            :value {EWW_BATTERY.BAT0.capacity}
+            :onchange ""
+	    :tooltip {EWW_BATTERY.BAT0.capacity})
+    (metric :label "🧠"
+            :value {EWW_RAM.used_mem_perc}
+            :onchange ""
+	    :tooltip {EWW_RAM.used_mem_perc})
+    time))
+
+(defpoll weather :interval "10s"
+  "curl wttr.in/?format='%c+%t' | sed 's/\ \ \ / /'")
+
+(defwidget workspaces []
+  (box :class "workspaces"
+       :orientation "h"
+       :space-evenly true
+       :halign "start"
+       :spacing 10
+       "${no}: ${window}"
+       ))
+
+(defwidget music []
+  (box :class "music"
+       :orientation "h"
+       :space-evenly false
+       :halign "center"
+    {music != "" ? "🎵${music}" : ""}))
+
+(deflisten music :initial "" "")
+
+(defwidget metric [label value onchange tooltip]
+  (box :orientation "h"
+       :class "metric"
+       :space-evenly false
+    (box :class "label" label)
+    (scale :min 0
+           :max 101
+           :active {onchange != ""}
+           :value value
+           :onchange onchange
+	   :tooltip tooltip)))
+
+
+(defpoll volume :interval "1s"
+  `amixer | grep 'Left:' | awk -F'[][]' '{ print $2 }' | tr -d '%' | head -1`)
+
+(defpoll time :interval "5s"
+  "date '+%a %b %d %H:%M'")
+
+    (defwindow bar
+	:monitor 0
+	:windowtype "dock"
+	:geometry (geometry
+			:y "20px"
+			:width "98%"
+			:height "40px"
+			:anchor "top center"
+			)
+	:exclusive true
+	:stacking "fg"
+      (bar))

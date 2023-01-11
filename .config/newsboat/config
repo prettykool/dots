@@ -1,0 +1,43 @@
+# Very cool color scheme
+color listnormal        default default
+color listnormal_unread default default
+color listfocus         default default reverse bold
+color listfocus_unread  default default reverse bold
+color info              default default reverse
+color background        default default
+color article           default default
+color end-of-text-marker default default
+color listnormal_unread default default bold
+
+# show-title-bar no
+show-keymap-hint no
+swap-title-and-hints yes
+
+# String formatting
+articlelist-title-format "(%u/%t) %T %> %N %V"
+articlelist-format  "%?T?|%-17T| ?%t %> %D"
+
+datetime-format "%D, %R"
+
+feedlist-title-format "%u/%t%?F? matching filter '%F'&?%?T? - tag '%T'&? %> %N %V"
+feedlist-format "%t %> %u"
+
+itemview-title-format "'%T' %> %N %V"
+
+# Macros
+macro i set browser 'feh';
+macro v set browser 'mpv';
+macro b set browser 'chromium-freeworld';
+macro d set browser 'yt-dlp' # Download videos
+
+# Keybindings
+bind-key RIGHT open
+bind-key TAB next
+bind-key ^LEFT prev
+bind-key LEFT quit
+bind-key h help
+bind-key q hard-quit
+
+# Settings I like to use
+auto-reload yes
+reload-time 120

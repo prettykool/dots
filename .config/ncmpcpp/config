@@ -1,0 +1,33 @@
+##
+# Files
+mpd_music_dir = "~/Music"  
+lyrics_directory  = ~/.ncmpcpp/lyrics
+ncmpcpp_directory  = ~/.ncmpcpp
+mpd_host = "localhost"
+mpd_port = "6600"  
+mpd_connection_timeout = "5"  
+mpd_crossfade_time = "5"  
+
+browser_display_mode = classic
+visualizer_in_stereo = "yes"
+visualizer_output_name = "mpd"
+visualizer_type = "spectrum" # (spectrum/wave)
+visualizer_color = "green"
+
+colors_enabled = no
+
+playlist_display_mode = "classic" # (classic/columns)
+
+song_list_format = "{%a: %b: %t}|{%a: %t}|{%f} {$R %l}"
+
+now_playing_prefix = "$b[+] "
+now_playing_suffix = "$/b"
+
+selected_item_prefix = "$b>>> "
+selected_item_suffix = "$/b"
+
+header_window_color = 9
+
+titles_visibility = yes
+progressbar_look = "██ "
+song_status_format = "{{%a{ %b{ (%y)}} - }{%t}}|{%f}"
