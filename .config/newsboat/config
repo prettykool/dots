@@ -1,13 +1,12 @@
 # Very cool color scheme
-color listnormal        default default
-color listnormal_unread default default
-color listfocus         default default reverse bold
-color listfocus_unread  default default reverse bold
-color info              default default reverse
-color background        default default
-color article           default default
-color end-of-text-marker default default
-color listnormal_unread default default bold
+color listfocus         black red bold
+color listfocus_unread  black red bold
+color listnormal_unread yellow black
+color info              blue default reverse
+
+# highlights
+highlight article "https?://[^ ]+" 		yellow default
+highlight article "^(Title):.*$"		red default
 
 # show-title-bar no
 show-keymap-hint no

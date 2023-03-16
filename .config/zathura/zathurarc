@@ -1,1 +1,14 @@
 set selection-clipboard clipboard
+
+set recolor false
+set recolor-keephue true
+
+set statusbar-h-padding 12
+
+set statusbar-bg "#fbf1c7"
+set statusbar-fg "#000000"
+
+set inputbar-fg "#fbf1c7"
+set inputbar-bg "#7c6f64"
+
+set font "Cascadia Code Regular 12"

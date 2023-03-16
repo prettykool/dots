@@ -1,5 +1,0 @@
-@theme "/usr/share/rofi/themes/gruvbox-light.rasi"
-
-window {
-  border-radius: 10px;
-}

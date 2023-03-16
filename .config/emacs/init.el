@@ -1,5 +1,6 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+;; (gpm-mouse-mode 0)
 (scroll-bar-mode -1)
 (setq auto-save-default nil)
 (setq make-backup-files nil)
@@ -12,11 +13,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("d14f3df28603e9517eb8fb7518b662d653b25b26e83bd8e129acea042b774298" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" "83e0376b5df8d6a3fbdfffb9fb0e8cf41a11799d9471293a810deb7586c131e6" "6b5c518d1c250a8ce17463b7e435e9e20faa84f3f7defba8b579d4f5925f60c1" "4eb6fa2ee436e943b168a0cd8eab11afc0752aebb5d974bba2b2ddc8910fca8f" "6bdcff29f32f85a2d99f48377d6bfa362768e86189656f63adbf715ac5c1340b" "78c4238956c3000f977300c8a079a3a8a8d4d9fee2e68bad91123b58a4aa8588" "4c56af497ddf0e30f65a7232a8ee21b3d62a8c332c6b268c81e9ea99b11da0d3" "c6da29e5267938b087cab199e0848114cefc425745fc42879a9067491c216d2d" "9b59e147dbbde5e638ea1cde5ec0a358d5f269d27bd2b893a0947c4a867e14c1" default))
+   '("b73a23e836b3122637563ad37ae8c7533121c2ac2c8f7c87b381dd7322714cd0" "37768a79b479684b0756dec7c0fc7652082910c37d8863c35b702db3f16000f8" "d14f3df28603e9517eb8fb7518b662d653b25b26e83bd8e129acea042b774298" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" "83e0376b5df8d6a3fbdfffb9fb0e8cf41a11799d9471293a810deb7586c131e6" "6b5c518d1c250a8ce17463b7e435e9e20faa84f3f7defba8b579d4f5925f60c1" "4eb6fa2ee436e943b168a0cd8eab11afc0752aebb5d974bba2b2ddc8910fca8f" "6bdcff29f32f85a2d99f48377d6bfa362768e86189656f63adbf715ac5c1340b" "78c4238956c3000f977300c8a079a3a8a8d4d9fee2e68bad91123b58a4aa8588" "4c56af497ddf0e30f65a7232a8ee21b3d62a8c332c6b268c81e9ea99b11da0d3" "c6da29e5267938b087cab199e0848114cefc425745fc42879a9067491c216d2d" "9b59e147dbbde5e638ea1cde5ec0a358d5f269d27bd2b893a0947c4a867e14c1" default))
  '(delete-selection-mode nil)
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(editorconfig term+ stupid-indent-mode fountain-mode vterm-toggle web-mode yaml-mode react-snippets ranger crdt go-mode multiple-cursors gruvbox-theme rustic typescript-mode lsp-mode pdf-tools magit magitt markdown-mode restclient vue-mode mbsync rainbow-mode))
+   '(one-themes nord-theme editorconfig term+ stupid-indent-mode fountain-mode vterm-toggle web-mode yaml-mode react-snippets ranger crdt go-mode multiple-cursors gruvbox-theme rustic typescript-mode lsp-mode pdf-tools magit magitt markdown-mode restclient vue-mode mbsync rainbow-mode))
  '(warning-suppress-log-types
    '((comp)
      (comp)
@@ -58,22 +59,32 @@
    t))
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-;; (load-theme 'one-light t)
-(load-theme 'gruvbox-light-medium t)
+(load-theme 'one-dark t)
+;; (load-theme 'gruvbox-light-medium t)
 (set-face-attribute 'default nil
+;;                   :family "Inconsolata light"
 		    :family "Cascadia Code PL, Light"
+		    ;;:family "Cascadia Code"
+		    ;;:family "Terminus (TTF)"
                     :height 105
                     :weight 'normal
                     :width 'normal)
 (put 'upcase-region 'disabled nil)
 
+
+
+;; (require 'centaur-tabs)
+;; (centaur-tabs-mode t)
+;; (setq centaur-tabs-style "box")
 (require 'restclient)
 (require 'rainbow-mode)
 (require 'multiple-cursors)
 (global-auto-revert-mode)
 (put 'dired-find-alternate-file 'disabled nil)
 
+;; Mutt support.
 (add-to-list 'auto-mode-alist '("/tmp/mutt.*" . mail-mode))
+;; Neomutt support.
 (add-to-list 'auto-mode-alist '("/tmp/neomutt-" . mail-mode))
 
 (setq erc-prompt "> ")

@@ -1,0 +1,83 @@
+{
+  "layer":"bottom",
+  "modules-left":[
+    "custom/wsno",
+    "hyprland/window"
+  ],
+  "modules-right":[
+    "network",
+    "backlight",
+    "pulseaudio",
+    "memory",
+    "battery",
+    "clock"
+  ],
+  "custom/wsno":{
+    "exec":"~/.config/eww/scripts/workspaceno",
+    "restart-interval":1
+  },
+  "hyprland/window":{
+    "format":": {}",
+    "separate-outputs":true,
+    "max-length":100
+  },
+  "network":{
+    "format":"{ifname}",
+    "format-wifi":" {essid}",
+    "format-ethernet":"{ipaddr}/{cidr}",
+    "format-disconnected":"",
+    "tooltip-format":" {ifname} via {gwaddr}",
+    "tooltip-format-wifi":" {essid}",
+    "tooltip-format-ethernet":" {ifname}",
+    "tooltip-format-disconnected":"Disconnected",
+    "max-length":50
+  },
+  "backlight":{
+    "format":" {percent}%"
+  },
+  "pulseaudio":{
+    "format":"{icon} {volume}%",
+    "format-bluetooth":"{icon} {volume}%",
+    "format-muted":"",
+    "format-icons":{
+      "default":[
+        "",
+        ""
+      ]
+    },
+    "scroll-step":1,
+    "on-click":"pavucontrol",
+    "ignored-sinks":[
+      "Easy Effects Sink"
+    ]
+  },
+  "battery":{
+    "interval":60,
+    "states":{
+      "warning":30,
+      "critical":15
+    },
+    "format":"{icon} {capacity}%",
+    "format-icons":[
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "max-length":25
+  },
+  "memory":{
+    "interval":30,
+    "format":"  {}% ",
+    "max-length":10
+  },
+  "cpu":{
+    "interval":10,
+    "format":" {}%",
+    "max-length":10
+  },
+  "clock":{
+    "format":"| {:%a %b %d %H:%M}"
+  }
+}
