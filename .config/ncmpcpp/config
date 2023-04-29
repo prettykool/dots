@@ -17,7 +17,7 @@ visualizer_look = "██"
 header_visibility = no
 display_volume_level = yes
 
-colors_enabled = yes
+colors_enabled = no
 statusbar_color = white
 
 playlist_display_mode = "classic" # (classic/columns)

@@ -59,8 +59,8 @@
    t))
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'one-dark t)
-;; (load-theme 'gruvbox-light-medium t)
+;;(load-theme 'one-dark t)
+(load-theme 'gruvbox-light-medium t)
 (set-face-attribute 'default nil
 ;;                   :family "Inconsolata light"
 		    :family "Cascadia Code PL, Light"

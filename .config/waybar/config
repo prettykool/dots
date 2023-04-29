@@ -13,7 +13,7 @@
     "clock"
   ],
   "custom/wsno":{
-    "exec":"~/.config/waybar/workspaceno",
+    "exec":"~/.config/eww/scripts/workspaceno",
     "restart-interval":1
   },
   "hyprland/window":{
