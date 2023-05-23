@@ -1,0 +1,41 @@
+#!/bin/sh
+preview() {
+    chafa "$@" -f sixel -s "$(($2-2))x$3" | sed 's/#/\n#/g'
+}
+
+thumbnail="/tmp/thumbnail.png"
+
+file="$1"; shift
+case "$file" in
+*.tar*) tar tf "$file" ;;
+*.zip) unzip -l "$file" ;;
+*.rar) unrar l "$file" ;;
+*.7z) 7z l "$file" ;;
+*.avi|*.gif|*.mp4|*.mkv|*.webm)
+    cp /usr/share/icons/HighContrast/256x256/categories/applications-multimedia.png "$thumbnail"
+    ffmpegthumbnailer -i "$file" -s 0 -q 5 -o "$thumbnail"
+    preview "$thumbnail" "$@"
+    ~/.config/lf/tripe.py "$f"
+    ;;
+# mediainfo
+*.mp3|*.flac|*.opus)
+    ffmpegthumbnailer -i "$file" -s 0 -q 5 -o "$thumbnail"
+    preview "$thumbnail" "$@"
+    ~/.config/lf/tripe.py "$f"
+    ;;
+*.pdf)
+    gs -o "$thumbnail" -sDEVICE=png48 -dLastPage=1 "$file" >/dev/null
+    preview "$thumbnail" "$@"
+    ./tripe.py "$f"
+    ;;
+*.jpg|*.jpeg|*.png|*.bmp|*.webp)
+    preview "$file" "$@" 
+    ~/.config/lf/tripe.py "$f"
+    ;;
+*.svg)
+   convert "$file" "$thumbnail"
+   preview "$thumbnail" "$@"
+   ;;
+*) cat "$file" ;;
+esac
+return 127 # nonzero retcode required for lf previews to reload
