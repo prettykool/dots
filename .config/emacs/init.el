@@ -5,7 +5,7 @@
 (setq auto-save-default nil)
 (setq make-backup-files nil)
 
-(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+;; (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -59,29 +59,22 @@
    t))
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-;;(load-theme 'one-dark t)
 (load-theme 'gruvbox-light-medium t)
 (set-face-attribute 'default nil
-;;                   :family "Inconsolata light"
 		    :family "Cascadia Code PL, Light"
-		    ;;:family "Cascadia Code"
-		    ;;:family "Terminus (TTF)"
                     :height 105
                     :weight 'normal
                     :width 'normal)
 (put 'upcase-region 'disabled nil)
 
-
-
-;; (require 'centaur-tabs)
-;; (centaur-tabs-mode t)
-;; (setq centaur-tabs-style "box")
 (require 'restclient)
 (require 'rainbow-mode)
 (require 'multiple-cursors)
 (global-auto-revert-mode)
 (put 'dired-find-alternate-file 'disabled nil)
-
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+(add-hook 'text-mode-hook 'display-line-numbers-mode)
+(global-font-lock-mode -1)
 ;; Mutt support.
 (add-to-list 'auto-mode-alist '("/tmp/mutt.*" . mail-mode))
 ;; Neomutt support.
