@@ -1,0 +1,145 @@
+#+setupfile: ~/.config/emacs/org-themes/simple_inline.theme
+#+title: Feeds
+
+# * =feeds.org=
+
+#+attr_html: :width 450px
+[[./pics/nz4qLQq3_400x400.jpg]]
+
+Elfeed config/summaries of the feeds I'm subscribed to. 
+
+Use =elfeed-org= for this, fucker. Also, just so you know, =org= is a shockingly efficient configuration format. 
+
+** URL formats that used by platforms for RSS feeds.
+Some older platforms (mostly from pre-2012, when RSS was still seen as cool) still have RSS enabled. I'm collecting links for that for convenience.
+*** DeviantArt
+- https://backend.deviantart.com/rss.xml?type=deviation&q=by%3A{user}+sort%3Atime+meta%3Aall
+See https://www.deviantart.com/developers/rss for more information.
+*** Reddit
+- http://www.reddit.com/r/{subreddit}/.rss
+See https://www.reddit.com/wiki/rss/ for more information.
+
+* Feeds                                                              :elfeed:
+** YouTube                                                          :youtube:
+Do note that I use [[https://yewtu.be][yewtu.be]] for every link here. This is because:
+
+1. yewtu.be is more privacy-friendly than YouTube  
+2. It has a fucking button for RSS right on every channel.
+
+*** [[https://yewtu.be/feed/channel/UCBa659QWEk1AI4Tg--mrJ2A][Tom Scott]]
+Has been to nearly every weird place you can imagine, and explains things you probably never thought you'd want to learn about.
+*** [[https://yewtu.be/feed/channel/UC4rqhyiTs7XyuODcECvuiiQ][Scott The Woz]]
+White guy with glasses #1.
+*** [[https://yewtu.be/feed/channel/UCllm3HivMERwu2x2Sjz5EIg][Vargskelethor Joel]]
+The greatest streamer of all-time. 
+*** [[https://yewtu.be/feed/channel/UCVo63lbKHjC04KqYhwSZ_Pg][Defunctland]]
+Like Tom Scott, but with a focus on the entertainment industry.
+*** [[https://yewtu.be/feed/channel/UCOkL7q2SeGZeZuj22njMYEA][Caddicarus]]
+Goofy game reviews. 
+*** [[https://yewtu.be/feed/channel/UCM0V8r4kuIWIl6Sy-NHj2lg][Quinton Reviews]]
+Some of the longest videos I've seen uploaded to YouTube. 
+*** [[https://yewtu.be/feed/channel/UCfbnTUxUech4P1XgYUwYuKA][Cold Ones]]
+Drunk Australian tomfoolery. 
+*** [[https://yewtu.be/feed/channel/UCK-GxvzttTnNhq3JPYpXhqg][Sarah Z]]
+Videos about fandom, and internet culture.
+*** [[https://yewtu.be/feed/channel/UC7-E5xhZBZdW-8d7V80mzfg][Jenny Nicholson]]
+See above.
+*** [[https://yewtu.be/feed/channel/UCodbH5mUeF-m_BsNueRDjcw][Overly Sarcastic Productions]]
+Analysis of history, literature, and mythology.
+*** [[https://yewtu.be/feed/channel/UCWyRlMktpKbfefqBQk8U6Nw][Izzzyzzz]]
+Post-Y2K Internet Culture Analysis.
+*** [[https://yewtu.be/feed/channel/UCGwu0nbY2wSkW8N-cghnLpA][Jaiden Animations]]
+Wacky things about life, and video games.
+*** [[https://yewtu.be/feed/channel/UCQuZgTeDkLjVdsO6Ahg9Qjw][Red Bard]]
+Weebshit historian.
+*** [[https://yewtu.be/feed/channel/UC9ek8xUVjnmQ-q7f6CTwtxg][AstralSpiff]]
+Speedrunner.
+*** [[https://yewtu.be/feed/channel/UCj74rJ9Lgl3WTngq675wxKg][Noodle]]
+Some of the more insightful media criticism on YouTube, delivered by an avatar that looks like a potato.
+*** [[https://yewtu.be/feed/channel/UC7_YxT-KID8kRbqZo7MyscQ][Markiplier]]
+*WAS THAT THE BITE OF '87?!*
+*** [[https://yewtu.be/feed/channel/UCFeqAfEuKm7lIg2ddQzh61A][Emirichu]]
+Videos about living in Japan and takes on media (particularly Anime/Manga).
+*** [[https://yewtu.be/feed/channel/UCsKVP_4zQ877TEiH_Ih5yDQ][illymation]]
+Videos about the life of an autistic girl.
+** Humor                                                              :humor:
+*** [[https://www.theonion.com/rss][The Onion]]
+Fake news, but funny.
+*** [[https://xkcd.com/rss.xml][xkcd]]
+"Oh, XCKD, I love your silly science comics that I don't understand..."
+** Tech                                                                :tech:
+*** [[https://news.opensuse.org/feed.xml][OpenSUSE News]]
+I use this OS, therefore, I must follow on its development. 
+*** [[https://deno.com/feed][Deno]]
+The only TypeScript/JS runtime that matters.
+*** [[https://buttondown.email/denonews/rss][Deno News]]
+See above.
+*** [[https://www.kernel.org/feeds/kdist.xml][Linux Kernel Updates]]
+Updates on the Linux kernel. 
+*** [[https://lwn.net/headlines/rss][lwn.net]]
+News on open-source software.
+*** [[http://9front.org/releases/index.rss][9front]]
+Community-maintained fork of /Plan 9 From Bell Labs./
+** Blogs :blog:
+*** [[https://www.oliverexplains.com/feed][Oliver Explains]]
+A man named Oliver explains things.
+*** [[https://www.transformativeworks.org/feed/][OTW]]
+The organization behind the Archive Of Our Own (AO3). 
+*** Tech Based                                                         :tech:
+# **** BoringCactus
+# Weird tech stuff.
+**** [[https://xeiaso.net/blog.rss][Xe Iaso's Blog]]
+Pretty interesting insights on software development.
+**** [[https://magnus.therning.org/feed.xml][Magnus]]
+Emacs stuff.
+**** [[https://feeds.feedburner.com/datahorde/SsYz][Data Horde]]
+Blog about internet archiving, and bulk-downloading.
+**** [[https://drewdevault.com/blog/index.xml][Drew DeVault]]
+Asshole/Wayland enthusiast. 
+**** [[https://landley.net/rss.xml][Rob Landley]]                                       
+Toybox maintainer, and minimal Linux enthusiast.
+**** [[https://jcs.org/rss][jcs]]
+OpenBSD developer and classic Mac nerd.
+**** [[https://maia.crimew.gay/feed.xml][maia arson crimew]]
+Social-Justice focused hacker. 
+*** Tumblr                                                           :tumblr:
+**** [[https://ask.plasterbrain.com/rss][Plasterbrain Tumblr]]
+Cool Musician.
+**** [[https://thespongemagic.tumblr.com/rss][SpongeMagic]]
+Furry blogger/wacky girl. 
+**** [[https://jelloapocalypse.tumblr.com/rss][JelloApocalypse]]
+Wacky guy, created Epithet Erased..
+**** Art :art:
+***** [[https://memen18-m5r3.tumblr.com/rss][pirran p]]
+Neat style. 
+***** [[https://wazzaldorps-comic-hole.tumblr.com/rss][Wazzaldorp]]
+Drawer of cute girls, and OneyPlays. 
+** Podcasts :podcasts:
+*** [[https://feeds.soundcloud.com/users/soundcloud:users:492135420/sounds.rss][QAnon Anonymous]]
+A podcast about conspiracy theorists.
+*** [[https://feeds.megaphone.fm/landofthegiants][Land Of The Giants]]
+** News                                                                :news:
+*** [[https://torrentfreak.com/feed/][TorrentFreak]]
+News about the downloading/piracy scene. 
+*** [[https://daily.jstor.org/feed/][JSTOR Daily]]
+Academic analysis of topics. 
+*** [[https://kenklippenstein.substack.com/feed][Ken Klippenstein]]
+Ongoing news relating to American politics. 
+*** [[https://www.erininthemorning.com/feed][Erin In The Morning]]
+Focus on the movement for transgender rights.
+*** [[https://www.vox.com/rss/index.xml][Vox]]
+Pretty lib,  but not a bad read.
+** Art                                                                  :art:
++Most of these totally aren't fetish artists. Look them up, they're really good I swear.+ 
+*** DeviantArt                                                   :deviantart:
+**** [[https://backend.deviantart.com/rss.xml?type=deviation&q=by%3Amentalcrash+sort%3Atime+meta%3Aall][mentalcrash]]
+Transformation art.
+**** [[https://backend.deviantart.com/rss.xml?type=deviation&q=by%3AKobi-Tfs+sort%3Atime+meta%3Aall][kobi-tfs]]
+I don't even know, man.
+**** [[https://backend.deviantart.com/rss.xml?type=deviation&q=by%3Apirran-p+sort%3Atime+meta%3Aall][pirran-p]]
+Same pirran as on tumblr.
+*** Twitter :twitter:
+I'll probably see if I can add any of these via. =rss-bridge= or whatever.
+** Reddit :reddit:
+*** [[https://www.reddit.com/r/ChurchOfMinaAshido/.rss][r/ChurchOfMinaAshido]]
+Subreddit about my favorite MHA character. Yes, it's weird. I don't care.
