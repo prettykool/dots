@@ -1,7 +1,8 @@
+
 {
   "layer":"bottom",
   "modules-left":[
-    "custom/wsno",
+    "hyprland/workspaces",
     "hyprland/window"
   ],
   "modules-right":[
@@ -10,16 +11,14 @@
     "pulseaudio",
     "memory",
     "battery",
-    "clock"
+    "custom/clock"
   ],
-  "custom/wsno":{
-    "exec":"~/.config/eww/scripts/workspaceno",
-    "restart-interval":1
+  "hyprland/workspaces":{
+    "format":"{name}/10:",
+    "active-only": true,
   },
-  "hyprland/window":{
-    "format":": {}",
-    "separate-outputs":true,
-    "max-length":100
+  "hyprland/window": {
+     "format": "{} ",
   },
   "network":{
     "format":"{ifname}",
@@ -56,8 +55,11 @@
     "states":{
       "warning":30,
       "critical":15
+      
     },
     "format":"{icon} {capacity}%",
+    "format-charging": "{icon} {capacity}% ",
+    "format-plugged": "{icon} {capacity}% ",
     "format-icons":[
       "",
       "",
@@ -78,6 +80,12 @@
     "max-length":10
   },
   "clock":{
-    "format":"| {:%a %b %d %H:%M}"
-  }
+    "format":"| {:L%a %b %d %H:%M}",
+    "format-alt":"| {:L%a %b %d %I:%M %p}"
+  },
+  "custom/clock": {
+    "format": "| {}",
+    "interval": 1,
+    "exec": "date +'%a %b %d %I:%M %p'",
+  },
 }

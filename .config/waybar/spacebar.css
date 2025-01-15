@@ -4,7 +4,6 @@
   font-family: "Cascadia Mono";
   font-size: 15px;
   min-height: 10px;
-  color: #000000;
 }
 
 window#waybar {
@@ -13,14 +12,14 @@ window#waybar {
 
 .modules-left,
 .modules-right {
-  padding: 10px;
+  padding: 5px;
   padding-right: 20px;
   padding-left: 20px;
 
-  background: #fbf1c7;
+  background: #ffffff;
   color: #000000;
   
-  border: 2px solid transparent;
+  border: 6px solid transparent;
 
   margin-top: 30px;
   margin-bottom: 15px;
@@ -28,7 +27,7 @@ window#waybar {
   margin-right: 30px;
 
   border: 3px solid black;
-  box-shadow: 10.5px 10.5px rgb(0, 0, 0);
+  box-shadow: -10.5px -10.5px rgba(0, 0, 0, 170);
 }
 
 #network,

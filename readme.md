@@ -1,5 +1,6 @@
-# `.files`
-These are dotfiles that people like.
+![Desktop](./demo.png "Desktop sample.")
+# dotfiles.
+These are dotfiles that people like (allegedly).
 
 ## Features:
 - Gruvbox light terminal color scheme.

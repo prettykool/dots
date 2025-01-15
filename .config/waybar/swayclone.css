@@ -1,0 +1,27 @@
+* {
+    font-family: monospace;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: #323232;
+    color: #ffffff;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    background-color: #285577;
+    border: 1px solid #4c7899
+}

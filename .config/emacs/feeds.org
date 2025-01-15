@@ -69,6 +69,8 @@ Wacky nonsense. Expect only me to find these funny.
 Fake news, but funny.
 *** [[https://xkcd.com/rss.xml][xkcd]]
 "Oh, XCKD, I love your silly science comics that I don't understand..."
+*** [[http://feeds.feedburner.com/satwcomic][Scandinavia and the World]]
+Like countryballs, but less gay.
 ** Tech                                                                :tech:
 *** [[http://9front.org/releases/index.rss][9front]]
 Community-maintained fork of /Plan 9 From Bell Labs./
@@ -116,10 +118,14 @@ Cool Musician.
 **** [[https://thespongemagic.tumblr.com/rss][SpongeMagic]]
 Furry blogger/wacky girl. 
 **** Art                                                                :art:
+***** [[https://ac120.tumblr.com/rss][AC120]]
+Neato.
 ***** [[https://memen18-m5r3.tumblr.com/rss][pirran p]]
 Neat style. 
 ***** [[https://wazzaldorps-comic-hole.tumblr.com/rss][Wazzaldorp]]
-Drawer of cute girls, and OneyPlays. 
+Drawer of cute girls, and OneyPlays.
+**** [[https://legendofnerd.tumblr.com/rss][LegendofNerd]]
+Cute
 ** Podcasts :podcasts:
 *** [[https://feeds.megaphone.fm/landofthegiants][Land Of The Giants]] :tech:
 Tech-focused podcast.
@@ -128,8 +134,8 @@ A podcast about conspiracy theorists.
 ** News                                                                :news:
 # *** [[https://news.google.com/rss/search?q=when:24h+allinurl:apnews.com&hl=en-US&gl=US&ceid=US:en][Associated Press]]
 # What more do I need to say?
-*** [[http://feeds.bbci.co.uk/news/rss.xml][BBC News]]
-Bri'ish
+# *** [[http://feeds.bbci.co.uk/news/rss.xml][BBC News]]
+# Bri'ish
 *** [[https://www.erininthemorning.com/feed][Erin In The Morning]]
 Focus on the movement for transgender rights.
 *** [[https://daily.jstor.org/feed/][JSTOR Daily]]
